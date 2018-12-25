@@ -1,5 +1,5 @@
 .nav-icon{
-    width:100px;
+    width:200px;
 }
 
 
@@ -16,13 +16,44 @@
         }
     }
     @include breakpoint(medium){
-        margin-left:3rem;
-        margin-top:1rem
+         margin-left:3rem;
+         margin-top:1rem
     }
 
     &.to-right{
-        float:right;
+        // float:right;
     }
+}
+
+.menu>li.bro{
+    a{
+        color:black;
+        &:hover{
+            color:rgba(0,0,0,0.5)
+        }
+        
+        &.is-active{
+            color:black;
+            font-weight:bold;
+        }
+    }
+    @include breakpoint(medium){
+         margin-left:0rem !important;
+         margin-top:0.5rem !important;
+         
+    }
+
+    &.to-right{
+        // float:right;
+    }
+}
+
+.label_drop{
+    @include breakpoint(medium){
+        margin-left:1rem !important;
+   }
+
+
 }
 
 .backdrop{
@@ -36,7 +67,15 @@
 .backdrop-blue{
     width:100%;
     height:100vh;
-    background-color: blue;
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('https://greenklean.ph/front/img/greenclean2.jpg');
+    background-size: cover;
+    padding:1rem;
+}
+
+.backdrop-2{
+    width:100%;
+    height:100vh;
+    background-size: cover;
     padding:1rem;
 }
 
@@ -46,8 +85,77 @@
 }
 
 
+
 .detach{
     position: fixed;
-    width:100%;
-    padding:1rem;
+    width:350%;
+    margin:3rem;
+}
+
+.footer{
+    position: fixed;
+    width:10%;
+    margin:44rem;
+}
+
+.detach2{
+
+    width:65%;
+    margin:15rem;
+}
+
+.detach3{
+ 
+    width:50%;
+
+    margin: 12.5rem 12.5rem 10.5rem 22.5rem;
+    justify-content:center;
+}
+
+.detach4{
+ 
+    width:50%;
+
+    margin: 12.5rem 12.5rem 10.5rem 22.5rem;
+    justify-content:center;
+}
+
+.mb-0{
+    margin-bottom: 0px;
+}
+
+.cbBlock{
+    text-align:right;
+}
+
+ul.menu1{
+    align-self: flex-end;
+     top: 90px;  
+}
+
+
+ul.menu2{
+
+}
+
+.divider{
+    border-top: solid 1px;
+    clear: both;
+    height: 1px;
+
+}
+
+.nospace{
+    margin-top:0px !important;
+    margin-bottom:0px !important;
+}
+
+.grid-padding-x>.cell {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+.centeru{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
