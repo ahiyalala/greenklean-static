@@ -1,3 +1,16 @@
+@font-face {
+    font-family: Futura;
+    src: url("../assets/font/futura.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FuturaB;
+    font-weight: bold;
+    src: url("../assets/font/futura.otf") format("opentype");
+}
+
+
+
 .nav-icon{
     width:100px;
     @include breakpoint(small only){
@@ -20,10 +33,14 @@
 
 
 .menu>li{
+
+    font-family: FuturaB !important;
+    letter-spacing: 2px;
+
     a{
         color:black;
         &:hover{
-            color:rgba(0,0,0,0.5)
+            color: #eee254;
         }
         
         &.is-active{
@@ -110,6 +127,8 @@
         width:100%;
         padding:1rem;
     }
+
+    
 }
 
 .top-bar, .top-bar ul{
@@ -160,6 +179,31 @@
         padding:1rem;
     }
 }
+
+ #style-15::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+     background-color: #F5F5F5;
+     border-radius: 10px;
+ }
+ 
+ #style-15::-webkit-scrollbar
+ {
+     width: 10px;
+     background-color: #F5F5F5;
+ }
+ 
+ #style-15::-webkit-scrollbar-thumb
+ {
+     border-radius: 10px;
+     background-color: #FFF;
+     background-image: -webkit-gradient(linear,
+                                        40% 0%,
+                                        75% 84%,
+                                        from(#4D9C41),
+                                        to(#19911D),
+                                        color-stop(.6,#54DE5D))
+ }
 
 .detach4{
  
@@ -217,3 +261,20 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.applyF{
+    font-family: Futura;
+}
+
+.button{
+    font-family: FuturaB !important;
+    background-color: #719500 !important;
+    border-radius: 1rem;
+}
+
+.brandName{
+    color: #e8eb70;
+   font-family: FuturaB !important;
+   letter-spacing: 2px;
+}
+
