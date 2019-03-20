@@ -1,12 +1,12 @@
 @font-face {
     font-family: Futura;
-    src: url("../assets/font/futura.otf") format("opentype");
+    src: url("../assets/font/futura light bt.ttf") format("opentype");
 }
 
 @font-face {
     font-family: FuturaB;
     font-weight: bold;
-    src: url("../assets/font/futura.otf") format("opentype");
+    src: url("../assets/font/Futura Bold font.ttf") format("opentype");
 }
 
 
@@ -30,12 +30,11 @@
 }
 
 
-
-
 .menu>li{
 
     font-family: FuturaB !important;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
 
     a{
         color:black;
@@ -219,6 +218,7 @@
     margin-right:auto;
     margin-bottom:1rem;
     width:80%;
+    font-size: 2.5rem;
 }
 
 .description{
@@ -264,17 +264,40 @@
 
 .applyF{
     font-family: Futura;
+    font-size: 1.3rem;
+}
+
+.applyFB{
+    font-family: FuturaB;
+    font-size: 1.5rem;
 }
 
 .button{
-    font-family: FuturaB !important;
+    font-family: Futura !important;
     background-color: #719500 !important;
     border-radius: 1rem;
 }
 
 .brandName{
-    color: #e8eb70;
+   color: #e8eb70;
    font-family: FuturaB !important;
    letter-spacing: 2px;
 }
 
+.spacing{
+    margin-top:0px !important;
+}
+
+.content{
+    font-family: Futura !important;
+    font-size: 1rem;
+}
+
+.contentB{
+    font-family: FuturaB !important;
+    font-size: 1.4rem;
+}
+.contentC{
+    font-family: FuturaB !important;
+    font-size: 1.3rem;
+}
